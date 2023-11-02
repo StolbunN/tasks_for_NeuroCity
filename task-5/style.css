@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh);
+    justify-items: center;
+    align-items: center;
+}
+
+.shape{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.circle {
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.triangle {
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.square {
+    background-color: orange;
+}
+.rectangle {
+    background-color: green;
+    width: 200px;
+}
+
+.shape.visibility-hidden{
+    opacity: 0;
+}
